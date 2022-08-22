@@ -1,0 +1,28 @@
+.favThings {
+    background-color: white;
+    padding: 50px 0px;
+
+    .favContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .favImg {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        box-shadow: -200px 10px 0px px $senary;
+
+    }
+
+    .favTxt {
+        flex: 1;
+        margin: 50px 50px;
+    }
+}

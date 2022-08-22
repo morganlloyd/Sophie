@@ -1,0 +1,45 @@
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+body {
+    background-color: $tertiary;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+button {
+    background-color: $accent;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+a {
+
+    display: inline-block;
+
+}
+
+footer {
+    text-align: center;
+    background-color: $primary;
+    color: white;
+    padding: 20px 0px;
+
+    p {
+        margin: 0;
+
+    }
+}

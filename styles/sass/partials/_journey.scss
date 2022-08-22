@@ -1,0 +1,22 @@
+.journey {
+    background-color: $whiteShade;
+    padding: 50px 0px;
+
+    .wrapper {
+        display: flex;
+    }
+    .journeyImg {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .journeyTxt {
+        width: 60%;
+    }
+    img {
+        width: 250px;
+        height: 250px;
+        box-shadow: 13px 12px 0px 2px $tertiary;
+    }
+}

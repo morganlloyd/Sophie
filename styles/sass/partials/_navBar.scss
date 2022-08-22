@@ -1,0 +1,65 @@
+.mobileNav {
+    background-color: $tertiary;
+    padding: 20px 0px;
+    position: sticky;
+    top: 0%;
+    z-index: 10;
+    display: none;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menuIcon {
+        padding: 10px;
+    }
+
+    i {
+        @include fontSize(30)
+    }
+
+    .logo {
+        padding-top: 10px;
+    }
+
+    a,
+    h1 {
+        transition: 0.4s ease;
+
+        &:hover,
+        &:focus {
+            color: $whiteShade;
+        }
+    }
+
+}
+
+
+
+.navBar {
+    background-color: $tertiary;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 20px 0;
+
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    li {
+        padding: 10px 15px;
+    }
+
+    a {
+        padding: 10px 15px;
+
+        &:hover,
+        &:focus {
+            color:$whiteShade;
+        }
+    }
+
+}

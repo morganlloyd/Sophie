@@ -1,0 +1,21 @@
+.photoAbout {
+    background-color: $whiteShade;
+    padding: 50px 0px;
+
+    .wrapper {
+        display: flex;
+    }
+    .flexContainer {
+        display: flex;
+    }
+    
+    i {
+        background-color: $tertiary;
+        border: 8px solid $tertiary;
+        border-radius: 50%;
+    }
+
+    .text {
+        margin-left: 20px;
+    }
+}
