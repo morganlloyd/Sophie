@@ -313,6 +313,10 @@ body {
   background-color: #f6a823;
 }
 
+section {
+  background-color: #f0efed;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -560,6 +564,68 @@ footer p {
 }
 .threeImg img {
   width: 300px;
+}
+
+.blogStyle {
+  padding: 50px 0px;
+}
+.blogStyle .columnFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.blogStyle .columnOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 30%;
+  gap: 20px;
+}
+.blogStyle .columnTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  gap: 20px;
+}
+.blogStyle .about,
+.blogStyle .recent,
+.blogStyle .blog,
+.blogStyle .commentOne,
+.blogStyle .commentTwo {
+  background-color: white;
+  padding: 40px;
+}
+.blogStyle .blog {
+  border-bottom: 3px solid #f6a823;
+}
+.blogStyle .commentOne,
+.blogStyle .commentTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.blogStyle .commentTwo {
+  border-bottom: 3px solid #f6a823;
+}
+.blogStyle .img {
+  width: 10%;
+}
+.blogStyle .txt {
+  width: 90%;
 }
 
 /* Portrait tablet and small desktops */

@@ -1,0 +1,53 @@
+.blogStyle {
+    padding: 50px 0px;
+    .columnFlex {
+        display: flex;
+        gap: 40px;
+    
+    }
+    
+    .columnOne {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        width: 30%;
+        gap: 20px;
+    }
+    
+    .columnTwo {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        gap: 20px;
+    }
+    
+    .about,
+    .recent,
+    .blog,
+    .commentOne,
+    .commentTwo {
+        background-color: white;
+        padding: 40px;
+    }
+    
+    .blog {
+        border-bottom: 3px solid $tertiary;
+    }
+    
+    .commentOne,
+    .commentTwo {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .commentTwo {
+        border-bottom: 3px solid $tertiary;
+    }
+    .img {
+        width: 10%;
+    }
+
+    .txt {
+        width: 90%;
+    }
+}
