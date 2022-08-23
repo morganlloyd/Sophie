@@ -1,25 +1,42 @@
 .favThings {
     background-color: white;
-    padding: 50px 0px;
+    padding: 0px 0px;
+    position: relative;
+
 
     .favContainer {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
+        position: relative;
     }
 
     .favImg {
         display: flex;
         flex: 1;
         justify-content: center;
+        position: relative;
+        top: -40px;
     }
 
     img {
-        width: 100%;
-        height: auto;
+        width: 600px;
         box-shadow: -200px 10px 0px px $senary;
+        z-index: 1;
 
     }
+
+    .rectangle {
+        width: 900px;
+        height: 390px;
+        background-color: $senary;
+        position: absolute;
+        top: 18px;
+        left: -30px;
+        z-index: 0;
+        
+    }
+
 
     .favTxt {
         flex: 1;

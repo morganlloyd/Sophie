@@ -1,0 +1,25 @@
+form {
+    display: flex;
+    flex-direction: column;
+
+    .flex {
+        display: flex;
+        gap: 15px;
+        
+        input{
+            width: 100%
+        }
+
+    }
+
+
+    input,
+    textarea {
+        border: 0;
+        padding: 20px 30px;
+        margin-bottom: 30px;
+        accent-color: $accent;
+        resize: none;
+        font-style: italic;
+    }
+}

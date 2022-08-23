@@ -1,5 +1,6 @@
 .blogStyle {
     padding: 50px 0px;
+
     .columnFlex {
         display: flex;
         gap: 40px;
@@ -12,6 +13,34 @@
         justify-content:flex-start;
         width: 30%;
         gap: 20px;
+
+        .about {
+
+            h5 {
+                margin-top: 20px;
+            }
+        }
+
+        .recent {
+
+            h5 {
+                margin-bottom: 10px;
+            }
+            ul {
+                margin-left: 20px;
+            }
+
+            li {
+                padding: 10px;
+                &::before {
+                    content:"•";
+                    color: $tertiary;
+                    display: inline-block;
+                    width: 20px;
+                    margin-left: -10px;
+                }
+            }
+        }
     }
     
     .columnTwo {
@@ -27,7 +56,7 @@
     .commentOne,
     .commentTwo {
         background-color: white;
-        padding: 40px;
+        padding: 30px;
     }
     
     .blog {
@@ -49,5 +78,14 @@
 
     .txt {
         width: 90%;
+    }
+
+    span {
+        color: $secondary;
+        font-weight: bold;
+    }
+
+    h4 {
+        margin-bottom: 20px;
     }
 }

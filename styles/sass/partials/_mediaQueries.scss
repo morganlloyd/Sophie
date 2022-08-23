@@ -90,6 +90,34 @@
             width: 90%;
         }
     }
+
+    // BLOG 
+
+    .blogStyle {
+
+        .columnFlex {
+            flex-direction: column-reverse;
+        }
+
+        .columnOne {
+            flex-direction: row;
+            width: 100%;
+
+        }
+        .columnTwo {
+            width: 100%;
+        }
+
+        .about,
+        .recent {
+            width: 50%;
+        }
+
+        button {
+            width: 100%;
+        }
+
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -138,4 +166,32 @@
 
     }
 
+    .blogStyle {
+
+        .columnOne {
+            flex-direction: column;
+
+            .about {
+                width: 100%;
+            }
+
+            .recent {
+                width: 100%;
+            }
+        }
+        .columnTwo {
+
+            .flex {
+                flex-direction: column;
+                gap: 0px;
+                }
+
+            img {
+                width: 50px;
+            }
+            }
+    }
+
+
+    
 }

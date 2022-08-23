@@ -35,7 +35,7 @@
                 <!--wrapper begins-->
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="./index.html">Home</a>
                     </li>
                     <li>
                         <a href="#">About</a>
@@ -56,28 +56,30 @@
         <!--nav bar ends -->
 
         <!--header begins-->
-        <header>
-            <img src="./assets/blog-image-1.jpg">
+        <header class="blogHeader">
+            <div class="wrapper">
             <h2>BLOG</h2>
+            </div>
         </header>
 
         <section class="blogStyle">
             <div class="wrapper columnFlex">
             
                 <div class="columnOne">
-            
+
                     <div class="about">
                         <img src="./assets/blog-image-2.jpg">
-                        <h4>about</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, rem!</p>
+                        <h5>About Sophie</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, rem! <span>Find out more.</span></p>
                     </div>
             
                     <div class="recent">
-                        <h4>recent posts</h4>
+                        <h5>recent posts</h5>
                         <ul>
-                            <li> blog post </li>
-                            <li> blog post </li>
-                            <li> blog post </li>
+                            <li> Lorem ipsum dolor sit </li>
+                            <li> Laborum cupiditate at</li>
+                            <li> Placeat exercitation em</li>
+                            <li> Corrupti atque labore</li>
                         </ul>
                     </div>
             
@@ -86,31 +88,43 @@
                 <div class="columnTwo">
             
                     <div class="blog">
-                        <h4>WHY I AM A BLOGGER</h2>
+                        <h4>Why I Became a Blogger</h4>
+                        <em>Monday October 8th, 2018 by <span>Sophie Barlow</span></em>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim a ex! Quos ab quidem porro a, quam
-                            ullam, amet accusamus blanditiis delectus dolorem vel deserunt neque inventore est? Odit corporis
+                            ullam, amet accusamus blanditiis delectus dolorem vel deserunt neque inventore est?</p> 
+                            <p>Odit corporis
                             veritatis tempore sapiente laborum cum nobis blanditiis, laboriosam, placeat voluptatem provident
                             officia est id? Aspernatur optio itaque harum blanditiis atque impedit. Voluptatem ex ut veritatis totam
-                            iste quam nemo vero. Sapiente, sed ipsam. Eaque molestiae mollitia, harum iusto architecto eum? Qui,
-                            optio? Blanditiis amet distinctio facere iste. Tempora tenetur, fuga impedit unde assumenda maxime
-                            repellat, quisquam amet dolorum, voluptatem quia voluptates hic perspiciatis ipsum minima ab enim
-                            molestiae ad!</p>
+                            iste quam nemo vero.Sapiente, sed ipsam. Eaque molestiae mollitia, harum iusto architecto eum? Qui,
+                            optio? Blanditiis amet distinctio facere iste.
+                            </p>
+
+                            
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi facilis placeat hic sint similique recusandae quia laboriosam, aliquam aperiam molestiae alias beatae rem nostrum tenetur cumque reprehenderit ullam dicta atque qui numquam eveniet! Dolorem vel culpa, repudiandae aliquam eligendi minima a, veniam non quasi dignissimos ipsum explicabo odit nisi minus suscipit eum. Error earum consequuntur dolor, blanditiis deserunt eum labore, a ad consequatur officiis molestias harum? Odit inventore quod voluptatibus cumque odio illum optio reprehenderit, eaque a harum molestias reiciendis facere vel nulla at obcaecati rerum sapiente. Sequi blanditiis iste eveniet consectetur cum odit molestias repellendus rerum fugiat. Id, similique, ab quaerat magnam quas blanditiis, quasi ipsa laboriosam vero voluptate commodi? Illo quisquam, quo quas itaque nemo laboriosam perspiciatis. Expedita atque eos hic eum ipsa. Quis obcaecati autem tempora ducimus. Ratione tenetur delectus quas fuga pariatur. Dolorum rem illum excepturi quod quibusdam voluptatum possimus nihil adipisci! Dolores impedit perspiciatis nesciunt omnis cumque eaque odit soluta voluptatum fugit repellat eum dignissimos id architecto excepturi animi sequi, minus velit error, possimus aspernatur.
+                            </p>
+                            <p>Tempora tenetur, fuga impedit unde assumenda maxime
+                                repellat, quisquam amet dolorum, voluptatem quia voluptates hic perspiciatis ipsum minima ab enim
+                                molestiae ad!</p>
                     </div>
                     <div class="commentOne">
                         <div class="img">
                             <img src="./assets/blog-image-3.jpg">
                         </div>
                         <div class="txt">
+                            <em><span>Tuesday October 9th, 2018 by Jeremy</span></em>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magnam velit minima similique nulla
                                 aliquam necessitatibus rerum accusantium vitae ipsum, sint blanditiis voluptates ratione! Hic
                                 nesciunt odio provident eligendi. Unde.</p>
                         </div>
                     </div>
+
                     <div class="commentTwo">
                         <div class="img">
                             <img src="./assets/blog-image-4.jpg">
                         </div>
                         <div class="txt">
+                            <em><span>Wednesday October 10th, 2018 by Julia</span></em>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magnam velit minima similique nulla
                                 aliquam
                                 necessitatibus rerum accusantium vitae ipsum, sint blanditiis voluptates ratione! Hic nesciunt odio
@@ -118,9 +132,33 @@
                                 eligendi. Unde.</p>
                         </div>
                     </div>
+
+                    <div class="contactForm">
+                        <form action="" method="" class="commentForm" name="commentForm">
+
+                            <div class="flex">
+                                <label for="name" class="sr-only">Name</label>
+                                <input type="text" id="name" placeholder="Name">
+
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" id="email" placeholder="Email">
+                            </div>
+                        
+                            <label for="message" class="sr-only">Comment</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message for me"></textarea>
+                        
+                        
+                            <button class="button">Post Comment</button>
+
+                        </form>
+                    </div>
                 </div>
             
             </div>
         </section>
+        
+        <footer><!--footer begins-->
+            <p>Juno College 2022</p>
+        </footer><!--footer ends-->
 </body>
 </html>
