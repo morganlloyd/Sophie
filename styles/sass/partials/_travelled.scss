@@ -1,0 +1,33 @@
+.travelled {
+    background-color: white;
+
+    .travelledContainer {
+        display: flex;
+        gap: 80px;
+    }
+
+    .travelledTxt {
+        width: 50%;
+        justify-content: center;
+        text-align: right;
+        padding: 60px 50px;
+
+
+    }
+
+    .travelledImg {
+        width: 50%;
+        display: flex;
+        justify-content: left;
+    }
+
+    img {
+        width: 700px;
+        height: 400px;
+        box-shadow: 800px 20px 0px 0px $tertiary,
+        20px 20px 0px 0px $tertiary,
+        300px 20px 0px 0px $tertiary;
+        position: relative;
+        top: 30px
+    }
+}

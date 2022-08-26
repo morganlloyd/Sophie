@@ -354,6 +354,7 @@ footer {
 }
 footer p {
   margin: 0;
+  line-height: 32px;
 }
 
 .mobileNav {
@@ -474,56 +475,75 @@ footer p {
   padding: 50px 0;
 }
 .whoIsSophie .textContainer {
-  padding: 10px 50px;
+  padding: 50px 50px;
 }
 
 .favThings {
   background-color: white;
-  padding: 0px 0px;
-  position: relative;
 }
 .favThings .favContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
-  position: relative;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 80px;
 }
 .favThings .favImg {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+.favThings img {
+  width: 700px;
+  height: 400px;
+  -webkit-box-shadow: -800px 20px 0px 0px #a82706, 20px 20px 0px 0px #a82706, -300px 20px 0px 0px #a82706;
+          box-shadow: -800px 20px 0px 0px #a82706, 20px 20px 0px 0px #a82706, -300px 20px 0px 0px #a82706;
+  position: relative;
+  top: -30px;
+}
+.favThings .favTxt {
+  width: 50%;
+  padding: 60px 50px;
+}
+
+.travelled {
+  background-color: white;
+}
+.travelled .travelledContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 80px;
+}
+.travelled .travelledTxt {
+  width: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: right;
+  padding: 60px 50px;
+}
+.travelled .travelledImg {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+.travelled img {
+  width: 700px;
+  height: 400px;
+  -webkit-box-shadow: 800px 20px 0px 0px #f6a823, 20px 20px 0px 0px #f6a823, 300px 20px 0px 0px #f6a823;
+          box-shadow: 800px 20px 0px 0px #f6a823, 20px 20px 0px 0px #f6a823, 300px 20px 0px 0px #f6a823;
   position: relative;
-  top: -40px;
-}
-.favThings img {
-  width: 600px;
-  -webkit-box-shadow: -200px 10px 0px px #a82706;
-          box-shadow: -200px 10px 0px px #a82706;
-  z-index: 1;
-}
-.favThings .rectangle {
-  width: 900px;
-  height: 390px;
-  background-color: #a82706;
-  position: absolute;
-  top: 18px;
-  left: -30px;
-  z-index: 0;
-}
-.favThings .favTxt {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin: 50px 50px;
+  top: 30px;
 }
 
 .photoAbout {
@@ -550,8 +570,11 @@ footer p {
 }
 
 .fullBleed {
-  width: 100%;
-  height: auto;
+  background-image: url(/assets/home-image-4.jpg);
+  height: 35vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .journey {
@@ -718,7 +741,7 @@ form textarea {
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   button {
-    width: 90%;
+    width: 40%;
   }
   .headerContainer {
     -webkit-box-orient: vertical;
@@ -796,6 +819,18 @@ form textarea {
   }
   .favThings .favTxt {
     width: 90%;
+  }
+  .favThings .favTxt button {
+    width: 40%;
+  }
+  .travelled .travelledContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .travelled .travelledTxt button {
+    width: 40%;
   }
   .blogStyle .columnFlex {
     -webkit-box-orient: vertical;

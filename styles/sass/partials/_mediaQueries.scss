@@ -2,7 +2,7 @@
 @media (max-width: 940px) {
 
     button {
-        width: 90%;
+        width: 40%;
     }
 
     .headerContainer {
@@ -88,6 +88,24 @@
 
         .favTxt {
             width: 90%;
+
+            button {
+                width: 40%;
+            }
+        }
+    }
+
+    .travelled {
+
+        .travelledContainer {
+            flex-direction: column-reverse;
+        }
+        
+        .travelledTxt {
+            
+            button {
+                width: 40%;
+            }
         }
     }
 
