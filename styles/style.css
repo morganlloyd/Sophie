@@ -470,12 +470,25 @@ footer p {
   bottom: -40px;
 }
 
+.contactHeader {
+  background-image: url(/assets/contact-image-1.jpg);
+  height: 35vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.contactHeader h2 {
+  position: absolute;
+  bottom: -40px;
+}
+
 .whoIsSophie {
   background-color: #f0efed;
-  padding: 50px 0;
+  padding: 90px 0;
 }
 .whoIsSophie .textContainer {
-  padding: 50px 50px;
+  padding: 50px;
 }
 
 .favThings {
@@ -488,6 +501,10 @@ footer p {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   gap: 80px;
+}
+.favThings .favTxt {
+  width: 50%;
+  padding: 60px 50px;
 }
 .favThings .favImg {
   width: 50%;
@@ -506,10 +523,6 @@ footer p {
   position: relative;
   top: -30px;
 }
-.favThings .favTxt {
-  width: 50%;
-  padding: 60px 50px;
-}
 
 .travelled {
   background-color: white;
@@ -518,13 +531,12 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   gap: 80px;
 }
 .travelled .travelledTxt {
   width: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: right;
   padding: 60px 50px;
 }
@@ -548,7 +560,7 @@ footer p {
 
 .photoAbout {
   background-color: #f0efed;
-  padding: 50px 0px;
+  padding: 90px 0px;
 }
 .photoAbout .wrapper {
   display: -webkit-box;
@@ -569,6 +581,10 @@ footer p {
   margin-left: 20px;
 }
 
+.photoAboutTwo {
+  padding-top: 0;
+}
+
 .fullBleed {
   background-image: url(/assets/home-image-4.jpg);
   height: 35vh;
@@ -579,7 +595,7 @@ footer p {
 
 .journey {
   background-color: #f0efed;
-  padding: 50px 0px;
+  padding: 90px 0px;
 }
 .journey .wrapper {
   display: -webkit-box;
@@ -607,7 +623,7 @@ footer p {
 
 .threeImg {
   background-color: white;
-  padding: 50px 0px;
+  padding: 90px 0px;
 }
 .threeImg .wrapper {
   display: -webkit-box;
@@ -708,6 +724,41 @@ footer p {
 }
 .blogStyle h4 {
   margin-bottom: 20px;
+}
+
+.contactInfo {
+  padding: 90px 0px;
+}
+.contactInfo .wrapperFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.contactInfo .columnLeft {
+  width: 35%;
+}
+.contactInfo .infoBox {
+  background-color: white;
+  padding: 50px;
+}
+.contactInfo .infoBox a {
+  text-transform: lowercase;
+}
+.contactInfo .socials {
+  color: #f6a823;
+  font-size: 25px;
+  font-size: 1.25rem;
+}
+.contactInfo .socials ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+.contactInfo .columnRight {
+  width: 65%;
 }
 
 form {
@@ -815,10 +866,12 @@ form textarea {
             align-items: center;
   }
   .favThings .favImg {
-    width: 90%;
+    width: 100%;
   }
   .favThings .favTxt {
-    width: 90%;
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 45px;
   }
   .favThings .favTxt button {
     width: 40%;
@@ -828,6 +881,10 @@ form textarea {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  .travelled .travelledTxt {
+    width: 100%;
+    padding-top: 50px 0px;
   }
   .travelled .travelledTxt button {
     width: 40%;
@@ -858,6 +915,21 @@ form textarea {
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  .favThings img {
+    width: 100%;
+  }
+  .favThings .favTxt {
+    text-align: center;
+  }
+  .favThings .favTxt button {
+    width: 100%;
+  }
+  .travelled .travelledTxt {
+    text-align: center;
+  }
+  .travelled .travelledTxt button {
+    width: 100%;
+  }
   .photoAbout .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

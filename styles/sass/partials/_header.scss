@@ -52,3 +52,18 @@
 
 }
 
+// Styles for CONTACT header
+
+.contactHeader {
+    background-image: url(/assets/contact-image-1.jpg);
+    height: 35vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    h2 {
+        position: absolute;
+        bottom: -40px;
+    }
+}

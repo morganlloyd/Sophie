@@ -1,12 +1,15 @@
 .favThings {
     background-color: white;
 
-
-
     .favContainer {
         display: flex;
         flex-wrap: nowrap;
         gap: 80px;
+    }
+
+    .favTxt {
+        width: 50%;
+        padding: 60px 50px;
     }
 
     .favImg {
@@ -26,10 +29,5 @@
     }
 
 
-    .favTxt {
-        width: 50%;
-        padding: 60px 50px;
 
-        
-    }
 }

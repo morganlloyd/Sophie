@@ -83,17 +83,21 @@
         }
 
         .favImg {
-            width: 90%;
+            width: 100%;
         }
 
         .favTxt {
-            width: 90%;
+            width: 100%;
+            padding: 0px;
+            padding-bottom: 45px;
 
             button {
                 width: 40%;
             }
         }
     }
+
+
 
     .travelled {
 
@@ -102,7 +106,8 @@
         }
         
         .travelledTxt {
-            
+            width: 100%;
+            padding-top: 50px 0px;
             button {
                 width: 40%;
             }
@@ -141,8 +146,36 @@
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
-    .photoAbout {
+    .favThings {
+        img {
+            width: 100%;
+        }
 
+        .favTxt {
+            text-align: center;
+
+            button {
+                width: 100%;
+            }
+        }
+        
+        
+    }
+
+    .travelled {
+        
+        .travelledTxt {
+            text-align: center;
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    .photoAbout {
         .wrapper {
             flex-direction: column;
             text-align: left;
@@ -167,7 +200,6 @@
 @media (max-width: 480px) {
 
     .headerContainer {
-
         .decoTxt {
             width: 100px;
             left: -15px;
@@ -209,6 +241,7 @@
             }
             }
     }
+
 
 
     

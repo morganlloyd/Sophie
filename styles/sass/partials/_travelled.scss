@@ -3,12 +3,12 @@
 
     .travelledContainer {
         display: flex;
+        flex-wrap: nowrap;
         gap: 80px;
     }
 
     .travelledTxt {
         width: 50%;
-        justify-content: center;
         text-align: right;
         padding: 60px 50px;
 

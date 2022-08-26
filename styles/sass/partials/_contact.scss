@@ -1,0 +1,36 @@
+.contactInfo {
+    padding: 90px 0px;
+
+    .wrapperFlex {
+        display: flex;
+        gap: 40px;
+    }
+
+    .columnLeft {
+        width: 35%;
+    }
+
+    .infoBox {
+        background-color: white;
+        padding: 50px;
+
+        a {
+            text-transform: lowercase;
+        }
+    }
+
+    .socials {
+        color: $tertiary;
+        @include fontSize(25);
+
+        ul {
+            display: flex;
+            gap: 30px;
+            padding-bottom: 20px;
+        }
+        
+    }
+    .columnRight {
+        width: 65%;
+    }
+}
