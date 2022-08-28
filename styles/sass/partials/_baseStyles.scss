@@ -33,7 +33,8 @@ button {
     &:hover,
     &:focus {
         border: 2px solid $accent;
-        background-color: white;
+        background-color: $whiteShade;
+        color: $accent;
     }
 }
 

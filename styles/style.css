@@ -339,7 +339,8 @@ button {
 }
 button:hover, button:focus {
   border: 2px solid #05afc1;
-  background-color: white;
+  background-color: #f0efed;
+  color: #05afc1;
 }
 
 a {
@@ -459,7 +460,7 @@ footer p {
 
 .blogHeader {
   background-image: url(/assets/blog-image-1.jpg);
-  height: 35vh;
+  height: 50vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -472,7 +473,7 @@ footer p {
 
 .contactHeader {
   background-image: url(/assets/contact-image-1.jpg);
-  height: 35vh;
+  height: 50vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -868,6 +869,10 @@ form textarea {
   .favThings .favImg {
     width: 100%;
   }
+  .favThings img {
+    width: 100%;
+    height: auto;
+  }
   .favThings .favTxt {
     width: 100%;
     padding: 0px;
@@ -881,6 +886,19 @@ form textarea {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  .travelled .travelledImg {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .travelled img {
+    width: 100%;
+    height: auto;
   }
   .travelled .travelledTxt {
     width: 100%;
@@ -912,6 +930,21 @@ form textarea {
   .blogStyle button {
     width: 100%;
   }
+  .contactInfo .wrapperFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contactInfo .columnLeft {
+    width: 100%;
+  }
+  .contactInfo .columnRight {
+    width: 100%;
+  }
+  .contactInfo button {
+    width: 100%;
+  }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
@@ -924,11 +957,17 @@ form textarea {
   .favThings .favTxt button {
     width: 100%;
   }
+  .travelled .travelledImg {
+    width: 100%;
+  }
   .travelled .travelledTxt {
     text-align: center;
   }
   .travelled .travelledTxt button {
     width: 100%;
+  }
+  .photoAbout {
+    padding-bottom: 0px;
   }
   .photoAbout .wrapper {
     -webkit-box-orient: vertical;
@@ -945,6 +984,9 @@ form textarea {
     margin: 0;
     padding-top: 10px;
   }
+  .photoAboutTwo {
+    padding-bottom: 90px;
+  }
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
@@ -954,12 +996,12 @@ form textarea {
     bottom: -43px;
   }
   .headerContainer .headerTxt {
-    top: 65px;
+    top: 62px;
     left: 6px;
   }
   .headerContainer h2 {
-    font-size: 80px;
-    font-size: 4rem;
+    font-size: 70px;
+    font-size: 3.5rem;
   }
   .blogStyle .columnOne {
     -webkit-box-orient: vertical;
