@@ -443,8 +443,8 @@ footer p {
   z-index: -1;
 }
 .headerContainer h2 {
-  font-size: 90px;
-  font-size: 4.5rem;
+  font-size: 100px;
+  font-size: 5rem;
   letter-spacing: 5px;
 }
 .headerContainer .headerPic {
@@ -460,7 +460,7 @@ footer p {
 
 .blogHeader {
   background-image: url(/assets/blog-image-1.jpg);
-  height: 50vh;
+  height: 45vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -473,7 +473,7 @@ footer p {
 
 .contactHeader {
   background-image: url(/assets/contact-image-1.jpg);
-  height: 50vh;
+  height: 45vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -489,7 +489,7 @@ footer p {
   padding: 90px 0;
 }
 .whoIsSophie .textContainer {
-  padding: 50px;
+  padding: 0px;
 }
 
 .favThings {
@@ -501,11 +501,11 @@ footer p {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  gap: 80px;
+  gap: 60px;
 }
 .favThings .favTxt {
   width: 50%;
-  padding: 60px 50px;
+  padding: 60px 40px;
 }
 .favThings .favImg {
   width: 50%;
@@ -522,7 +522,7 @@ footer p {
   -webkit-box-shadow: -800px 20px 0px 0px #a82706, 20px 20px 0px 0px #a82706, -300px 20px 0px 0px #a82706;
           box-shadow: -800px 20px 0px 0px #a82706, 20px 20px 0px 0px #a82706, -300px 20px 0px 0px #a82706;
   position: relative;
-  top: -30px;
+  top: -35px;
 }
 
 .travelled {
@@ -534,12 +534,12 @@ footer p {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  gap: 80px;
+  gap: 40px;
 }
 .travelled .travelledTxt {
   width: 50%;
   text-align: right;
-  padding: 60px 50px;
+  padding: 60px 40px;
 }
 .travelled .travelledImg {
   width: 50%;
@@ -805,8 +805,8 @@ form textarea {
   .headerContainer .headerTxt {
     padding: 0;
     position: relative;
-    top: 70px;
-    left: -22px;
+    top: -2px;
+    left: 10px;
     z-index: 1;
   }
   .headerContainer .headerPic {
@@ -827,13 +827,13 @@ form textarea {
   }
   .journey .wrapper {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .journey .journeyImg {
     width: 100%;
-    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .journey img {
     width: 300px;
@@ -842,7 +842,7 @@ form textarea {
   .journey .journeyTxt {
     width: 100%;
     text-align: center;
-    padding: 10px 50px;
+    padding: 0px;
   }
   .threeImg {
     padding: 50px;
@@ -876,10 +876,7 @@ form textarea {
   .favThings .favTxt {
     width: 100%;
     padding: 0px;
-    padding-bottom: 45px;
-  }
-  .favThings .favTxt button {
-    width: 40%;
+    padding-bottom: 30px;
   }
   .travelled .travelledContainer {
     -webkit-box-orient: vertical;
@@ -895,6 +892,7 @@ form textarea {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
+    margin-bottom: 70px;
   }
   .travelled img {
     width: 100%;
@@ -902,10 +900,8 @@ form textarea {
   }
   .travelled .travelledTxt {
     width: 100%;
-    padding-top: 50px 0px;
-  }
-  .travelled .travelledTxt button {
-    width: 40%;
+    padding: 0px;
+    padding-bottom: 50px;
   }
   .blogStyle .columnFlex {
     -webkit-box-orient: vertical;
@@ -948,23 +944,20 @@ form textarea {
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  button {
+    width: 100%;
+  }
   .favThings img {
     width: 100%;
   }
   .favThings .favTxt {
     text-align: center;
   }
-  .favThings .favTxt button {
-    width: 100%;
-  }
   .travelled .travelledImg {
     width: 100%;
   }
   .travelled .travelledTxt {
     text-align: center;
-  }
-  .travelled .travelledTxt button {
-    width: 100%;
   }
   .photoAbout {
     padding-bottom: 0px;
@@ -987,21 +980,27 @@ form textarea {
   .photoAboutTwo {
     padding-bottom: 90px;
   }
+  .journey button {
+    width: 100%;
+  }
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  button {
+    width: 100%;
+  }
   .headerContainer .decoTxt {
     width: 100px;
-    left: -15px;
+    left: -20px;
     bottom: -43px;
   }
   .headerContainer .headerTxt {
-    top: 62px;
+    top: 0px;
     left: 6px;
   }
   .headerContainer h2 {
-    font-size: 70px;
-    font-size: 3.5rem;
+    font-size: 80px;
+    font-size: 4rem;
   }
   .blogStyle .columnOne {
     -webkit-box-orient: vertical;

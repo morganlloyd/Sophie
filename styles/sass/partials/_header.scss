@@ -18,7 +18,7 @@
     }
 
     h2 {
-        @include fontSize (90);
+        @include fontSize (100);
         letter-spacing: 5px;
     }
 
@@ -39,7 +39,7 @@
 
 .blogHeader { 
     background-image: url(/assets/blog-image-1.jpg);
-    height: 50vh;
+    height: 45vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,7 +56,7 @@
 
 .contactHeader {
     background-image: url(/assets/contact-image-1.jpg);
-    height: 50vh;
+    height: 45vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
