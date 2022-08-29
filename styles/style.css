@@ -249,6 +249,7 @@ h1, h2 {
 h1 {
   font-size: 38px;
   font-size: 1.9rem;
+  letter-spacing: 1px;
 }
 
 h2 {
@@ -280,6 +281,7 @@ h3, h4, h5 {
 
 p {
   line-height: 32px;
+  letter-spacing: 1px;
 }
 
 button {
@@ -325,7 +327,7 @@ ul {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   display: block;
 }
 
@@ -433,7 +435,7 @@ footer p {
   padding-top: 10px;
 }
 .headerContainer .headerTxt {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .headerContainer .decoTxt {
   width: 140px;
@@ -495,30 +497,29 @@ footer p {
 .favThings {
   background-color: white;
 }
-.favThings .favContainer {
+.favThings .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  gap: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 70px;
 }
 .favThings .favTxt {
-  width: 50%;
-  padding: 60px 40px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .favThings .favImg {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .favThings img {
-  width: 700px;
-  height: 400px;
   -webkit-box-shadow: -800px 20px 0px 0px #a82706, 20px 20px 0px 0px #a82706, -300px 20px 0px 0px #a82706;
           box-shadow: -800px 20px 0px 0px #a82706, 20px 20px 0px 0px #a82706, -300px 20px 0px 0px #a82706;
   position: relative;
@@ -528,35 +529,33 @@ footer p {
 .travelled {
   background-color: white;
 }
-.travelled .travelledContainer {
+.travelled .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  gap: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 70px;
 }
 .travelled .travelledTxt {
-  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: right;
-  padding: 60px 40px;
 }
 .travelled .travelledImg {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .travelled img {
-  width: 700px;
-  height: 400px;
-  -webkit-box-shadow: 800px 20px 0px 0px #f6a823, 20px 20px 0px 0px #f6a823, 300px 20px 0px 0px #f6a823;
-          box-shadow: 800px 20px 0px 0px #f6a823, 20px 20px 0px 0px #f6a823, 300px 20px 0px 0px #f6a823;
+  -webkit-box-shadow: 700px 20px 0px 0px #f6a823, 20px 20px 0px 0px #f6a823, 300px 20px 0px 0px #f6a823;
+          box-shadow: 700px 20px 0px 0px #f6a823, 20px 20px 0px 0px #f6a823, 300px 20px 0px 0px #f6a823;
   position: relative;
-  top: 30px;
 }
 
 .photoAbout {
@@ -588,7 +587,7 @@ footer p {
 
 .fullBleed {
   background-image: url(/assets/home-image-4.jpg);
-  height: 35vh;
+  height: 30vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -596,7 +595,7 @@ footer p {
 
 .journey {
   background-color: #f0efed;
-  padding: 90px 0px;
+  padding: 70px 0px;
 }
 .journey .wrapper {
   display: -webkit-box;
@@ -608,23 +607,23 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 .journey .journeyTxt {
-  width: 60%;
+  width: 70%;
 }
 .journey img {
-  width: 250px;
-  height: 250px;
+  width: 320px;
+  height: 320px;
   -webkit-box-shadow: 13px 12px 0px 2px #f6a823;
           box-shadow: 13px 12px 0px 2px #f6a823;
 }
 
 .threeImg {
   background-color: white;
-  padding: 90px 0px;
+  padding: 70px 0px;
 }
 .threeImg .wrapper {
   display: -webkit-box;
@@ -633,10 +632,11 @@ footer p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 55px;
+  gap: 50px;
 }
 .threeImg img {
-  width: 300px;
+  width: 100%;
+  height: auto;
 }
 
 .blogStyle {
@@ -834,6 +834,9 @@ form textarea {
   .journey .journeyImg {
     width: 100%;
     padding-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .journey img {
     width: 300px;
@@ -857,7 +860,7 @@ form textarea {
     width: 100%;
     height: auto;
   }
-  .favThings .favContainer {
+  .favThings .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -876,9 +879,9 @@ form textarea {
   .favThings .favTxt {
     width: 100%;
     padding: 0px;
-    padding-bottom: 30px;
+    margin: 0;
   }
-  .travelled .travelledContainer {
+  .travelled .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -944,6 +947,9 @@ form textarea {
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  .wrapper {
+    width: 95%;
+  }
   button {
     width: 100%;
   }

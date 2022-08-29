@@ -1,14 +1,15 @@
 .threeImg {
     background-color: white;
-    padding: 90px 0px;
+    padding: 70px 0px;
 
     .wrapper {
         display: flex;
         justify-content: center;
-        gap: 55px;
+        gap: 50px;
     }
 
     img {
-        width: 300px;
+        width: 100%;
+        height: auto;
     }
 }

@@ -1,27 +1,25 @@
 .favThings {
     background-color: white;
 
-    .favContainer {
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 60px;
-    }
 
-    .favTxt {
-        width: 50%;
-        padding: 60px 40px;
-    }
-
-    .favImg {
-        width: 50%;
+    .wrapper {
         display: flex;
-        justify-content: right;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
         
     }
 
+    .favTxt {
+        flex: 1;
+
+    }
+
+    .favImg {
+        flex: 1;
+    }
+
     img {
-        width: 700px;
-        height: 400px;
         box-shadow: -800px 20px 0px 0px $senary, 20px 20px 0px 0px $senary,
         -300px 20px 0px 0px $senary;
         position: relative;
@@ -31,3 +29,5 @@
 
 
 }
+       // width: 620px;
+        //height: 400px;

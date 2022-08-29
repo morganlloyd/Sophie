@@ -1,6 +1,6 @@
 .journey {
     background-color: $whiteShade;
-    padding: 90px 0px;
+    padding: 70px 0px;
 
     .wrapper {
         display: flex;
@@ -8,15 +8,15 @@
     .journeyImg {
         width: 40%;
         display: flex;
-        justify-content: center;
+        justify-content: left;
     }
 
     .journeyTxt {
-        width: 60%;
+        width: 70%;
     }
     img {
-        width: 250px;
-        height: 250px;
+        width: 320px;
+        height: 320px;
         box-shadow: 13px 12px 0px 2px $tertiary;
     }
 }

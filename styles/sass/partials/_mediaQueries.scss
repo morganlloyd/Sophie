@@ -48,6 +48,7 @@
         .journeyImg {
             width: 100%;
             padding-bottom: 50px;
+            justify-content: center;
         }
 
         img {
@@ -78,7 +79,7 @@
 
     .favThings {   // Fav things section with dog img 
         
-        .favContainer {
+        .wrapper {
             flex-direction: column;
             align-items: center;
         }
@@ -94,7 +95,7 @@
         .favTxt {
             width: 100%;
             padding: 0px;
-            padding-bottom: 30px;
+            margin: 0;
 
             
         }
@@ -104,7 +105,7 @@
 
     .travelled {
 
-        .travelledContainer {
+        .wrapper {
             flex-direction: column-reverse;
         }
         .travelledImg {
@@ -179,6 +180,10 @@
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
+    .wrapper {
+        width: 95%;
+    }
+    
     button {
         width: 100%;
     }
@@ -243,9 +248,11 @@
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+
     button {
         width: 100%;
     }
+
     .headerContainer {
         .decoTxt {
             width: 100px;
