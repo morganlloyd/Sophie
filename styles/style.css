@@ -475,7 +475,7 @@ footer p {
 
 .contactHeader {
   background-image: url(/assets/contact-image-1.jpg);
-  height: 45vh;
+  height: 40vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -488,7 +488,7 @@ footer p {
 
 .whoIsSophie {
   background-color: #f0efed;
-  padding: 90px 0;
+  padding: 95px 0;
 }
 .whoIsSophie .textContainer {
   padding: 0px;
@@ -496,6 +496,7 @@ footer p {
 
 .favThings {
   background-color: white;
+  padding-top: 50px;
 }
 .favThings .wrapper {
   display: -webkit-box;
@@ -507,23 +508,19 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 70px;
 }
 .favThings .favTxt {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 45%;
+  margin-left: 100px;
 }
 .favThings .favImg {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 55%;
 }
-.favThings img {
+.favThings .favImg img {
   -webkit-box-shadow: -800px 20px 0px 0px #a82706, 20px 20px 0px 0px #a82706, -300px 20px 0px 0px #a82706;
           box-shadow: -800px 20px 0px 0px #a82706, 20px 20px 0px 0px #a82706, -300px 20px 0px 0px #a82706;
   position: relative;
-  top: -35px;
+  top: -85px;
 }
 
 .travelled {
@@ -539,28 +536,25 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 70px;
 }
 .travelled .travelledTxt {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   text-align: right;
+  width: 45%;
+  margin-right: 100px;
 }
 .travelled .travelledImg {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 55%;
 }
-.travelled img {
+.travelled .travelledImg img {
   -webkit-box-shadow: 700px 20px 0px 0px #f6a823, 20px 20px 0px 0px #f6a823, 300px 20px 0px 0px #f6a823;
           box-shadow: 700px 20px 0px 0px #f6a823, 20px 20px 0px 0px #f6a823, 300px 20px 0px 0px #f6a823;
   position: relative;
+  top: 20px;
 }
 
 .photoAbout {
   background-color: #f0efed;
-  padding: 90px 0px;
+  padding-top: 90px;
 }
 .photoAbout .wrapper {
   display: -webkit-box;
@@ -582,12 +576,12 @@ footer p {
 }
 
 .photoAboutTwo {
-  padding-top: 0;
+  padding-bottom: 90px;
 }
 
 .fullBleed {
   background-image: url(/assets/home-image-4.jpg);
-  height: 30vh;
+  height: 35vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -640,7 +634,7 @@ footer p {
 }
 
 .blogStyle {
-  padding: 50px 0px;
+  padding: 90px 0px;
 }
 .blogStyle .columnFlex {
   display: -webkit-box;
@@ -661,6 +655,9 @@ footer p {
           justify-content: flex-start;
   width: 30%;
   gap: 20px;
+}
+.blogStyle .columnOne .about img {
+  width: 100%;
 }
 .blogStyle .columnOne .about h5 {
   margin-top: 20px;
@@ -805,7 +802,7 @@ form textarea {
   .headerContainer .headerTxt {
     padding: 0;
     position: relative;
-    top: -2px;
+    top: 20px;
     left: 10px;
     z-index: 1;
   }
@@ -824,6 +821,79 @@ form textarea {
   }
   .navBar {
     display: none;
+  }
+  .favThings .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .favThings .favImg {
+    width: 100%;
+  }
+  .favThings img {
+    width: 100%;
+    height: auto;
+  }
+  .favThings .favTxt {
+    width: 100%;
+    padding-bottom: 40px;
+    margin: 0;
+  }
+  .travelled .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .travelled .travelledImg {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-bottom: 90px;
+  }
+  .travelled img {
+    width: 100%;
+    height: auto;
+  }
+  .travelled .travelledTxt {
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 50px;
+    margin: 0;
+  }
+  .photoAbout {
+    padding-top: 50px;
+    padding-bottom: 0px;
+  }
+  .photoAbout .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+  }
+  .photoAbout .flexContainer {
+    display: block;
+    text-align: center;
+  }
+  .photoAbout .flexContainer p {
+    margin-bottom: 30px;
+  }
+  .photoAbout .text {
+    margin: 0;
+    padding-top: 10px;
+  }
+  .photoAboutTwo {
+    padding-top: 0px;
+    padding-bottom: 50px;
   }
   .journey .wrapper {
     -webkit-box-orient: vertical;
@@ -848,7 +918,7 @@ form textarea {
     padding: 0px;
   }
   .threeImg {
-    padding: 50px;
+    padding: 50px 50px;
   }
   .threeImg .wrapper {
     -webkit-box-orient: vertical;
@@ -860,51 +930,11 @@ form textarea {
     width: 100%;
     height: auto;
   }
-  .favThings .wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .blogHeader {
+    height: 30vh;
   }
-  .favThings .favImg {
-    width: 100%;
-  }
-  .favThings img {
-    width: 100%;
-    height: auto;
-  }
-  .favThings .favTxt {
-    width: 100%;
-    padding: 0px;
-    margin: 0;
-  }
-  .travelled .wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .travelled .travelledImg {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    margin-bottom: 70px;
-  }
-  .travelled img {
-    width: 100%;
-    height: auto;
-  }
-  .travelled .travelledTxt {
-    width: 100%;
-    padding: 0px;
-    padding-bottom: 50px;
+  .blogStyle {
+    padding: 80px 0px;
   }
   .blogStyle .columnFlex {
     -webkit-box-orient: vertical;
@@ -929,6 +959,9 @@ form textarea {
   .blogStyle button {
     width: 100%;
   }
+  .contactHeader {
+    height: 30vh;
+  }
   .contactInfo .wrapperFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -947,9 +980,6 @@ form textarea {
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-  .wrapper {
-    width: 95%;
-  }
   button {
     width: 100%;
   }
@@ -965,48 +995,56 @@ form textarea {
   .travelled .travelledTxt {
     text-align: center;
   }
-  .photoAbout {
-    padding-bottom: 0px;
-  }
-  .photoAbout .wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: left;
-  }
-  .photoAbout .flexContainer {
-    display: block;
-    text-align: center;
-  }
-  .photoAbout .text {
-    margin: 0;
-    padding-top: 10px;
-  }
-  .photoAboutTwo {
-    padding-bottom: 90px;
-  }
   .journey button {
     width: 100%;
+  }
+  .blogHeader h2 {
+    font-size: 70px;
+    font-size: 3.5rem;
+  }
+  .contactHeader h2 {
+    font-size: 70px;
+    font-size: 3.5rem;
+    white-space: nowrap;
   }
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  button {
-    width: 100%;
+  h3 {
+    font-size: 40px;
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 30px;
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 22px;
+    font-size: 1.1rem;
+  }
+  .wrapper {
+    width: 90%;
   }
   .headerContainer .decoTxt {
     width: 100px;
-    left: -20px;
-    bottom: -43px;
+    left: -18px;
+    bottom: -38px;
   }
   .headerContainer .headerTxt {
-    top: 0px;
-    left: 6px;
+    top: 25px;
+    left: px;
   }
   .headerContainer h2 {
-    font-size: 80px;
-    font-size: 4rem;
+    font-size: 88px;
+    font-size: 4.4rem;
+  }
+  .blogHeader h2 {
+    font-size: 55px;
+    font-size: 2.75rem;
+    bottom: -30px;
+  }
+  .blogStyle {
+    padding: 60px 0px;
   }
   .blogStyle .columnOne {
     -webkit-box-orient: vertical;
@@ -1016,6 +1054,7 @@ form textarea {
   }
   .blogStyle .columnOne .about {
     width: 100%;
+    text-align: center;
   }
   .blogStyle .columnOne .recent {
     width: 100%;
@@ -1027,7 +1066,15 @@ form textarea {
             flex-direction: column;
     gap: 0px;
   }
-  .blogStyle .columnTwo img {
-    width: 50px;
+  .blogStyle .img {
+    width: 20%;
+  }
+  .contactHeader h2 {
+    font-size: 55px;
+    font-size: 2.75rem;
+    bottom: -30px;
+  }
+  .contactInfo {
+    padding: 60px 0px;
   }
 }

@@ -12,7 +12,7 @@
         .headerTxt {
             padding: 0;
             position: relative;
-            top: -2px;
+            top: 20px;
             left: 10px;
             z-index: 1;
         }
@@ -24,7 +24,6 @@
         }
         
     }
-
 
     .textContainer {
         text-align: center;
@@ -39,43 +38,6 @@
         display: none;
     }
 
-    .journey {
-
-        .wrapper {
-            flex-direction: column;
-        }
-
-        .journeyImg {
-            width: 100%;
-            padding-bottom: 50px;
-            justify-content: center;
-        }
-
-        img {
-            width: 300px;
-            height: 300px;
-        }
-
-        .journeyTxt {
-            width: 100%;
-            text-align: center;
-            padding: 0px;
-
-        }
-    }
-
-    .threeImg { // three Img section 
-
-        padding: 50px;
-        .wrapper {
-            flex-direction: column;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
 
     .favThings {   // Fav things section with dog img 
         
@@ -94,7 +56,7 @@
         }
         .favTxt {
             width: 100%;
-            padding: 0px;
+            padding-bottom: 40px;
             margin: 0;
 
             
@@ -103,7 +65,7 @@
 
 
 
-    .travelled {
+    .travelled { // where she's travelled
 
         .wrapper {
             flex-direction: column-reverse;
@@ -112,7 +74,7 @@
             width: 100%;
             display: flex;
             justify-content: left;
-            margin-bottom: 70px;
+            margin-bottom: 90px;
 
         }
 
@@ -124,13 +86,88 @@
             width: 100%;
             padding: 0px;
             padding-bottom: 50px;
+            margin: 0;
 
         }
     }
 
+    .photoAbout {
+        padding-top: 50px;
+        padding-bottom: 0px;
+        .wrapper {
+            flex-direction: column;
+            text-align: left;
+        }
+    
+        .flexContainer {
+            display: block;
+            text-align: center;
+            
+            p {
+                margin-bottom: 30px;
+            }
+        }
+        
+        .text {
+            margin: 0;
+            padding-top: 10px;
+        }
+    
+    
+    }
+    
+    .photoAboutTwo {
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+
+    .journey { //sophie's journey
+    
+        .wrapper {
+            flex-direction: column;
+        }
+    
+        .journeyImg {
+            width: 100%;
+            padding-bottom: 50px;
+            justify-content: center;
+        }
+    
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    
+        .journeyTxt {
+            width: 100%;
+            text-align: center;
+            padding: 0px;
+    
+        }
+    }
+
+    .threeImg { // three img section 
+    
+        padding: 50px 50px;
+    
+        .wrapper {
+            flex-direction: column;
+        }
+    
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
     // BLOG 
 
+    .blogHeader {
+        height: 30vh;
+    }
+
     .blogStyle {
+        padding: 80px 0px;
 
         .columnFlex {
             flex-direction: column-reverse;
@@ -156,8 +193,10 @@
 
     }
 
-    // Contact page
-
+    // CONTACT
+    .contactHeader {
+        height: 30vh;
+    }
     .contactInfo {
 
         .wrapperFlex {
@@ -180,9 +219,7 @@
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
-    .wrapper {
-        width: 95%;
-    }
+
     
     button {
         width: 100%;
@@ -195,8 +232,6 @@
 
         .favTxt {
             text-align: center;
-
-            
         }
         
         
@@ -213,94 +248,123 @@
         }
     }
 
-
-
-    .photoAbout {
-        padding-bottom: 0px;
-        .wrapper {
-            flex-direction: column;
-            text-align: left;
-        }
-
-        .flexContainer {
-            display: block;
-            text-align: center;
-        }
-
-        .text {
-            margin: 0;
-            padding-top: 10px;
-        }
-        
-
-    }
-    .photoAboutTwo {
-        padding-bottom: 90px;
-    }
-
-   .journey {
-       button {
+    .journey {
+        button {
             width: 100%;
-       }
-   }
+        }
+    }
 
+    // blog page 
+
+    .blogHeader {
+        h2 {
+            @include fontSize(70);
+        }
+    }
+    //contact page 
+    
+    .contactHeader {
+        h2 {
+            @include fontSize(70);
+            white-space: nowrap;
+        }
+    }
 }
+
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
 
-    button {
-        width: 100%;
+    
+    h3 {
+        @include fontSize(40);
+    
+    }
+    
+    h4 {
+        @include fontSize(30);
+    
+    }
+    
+    h5 {
+        @include fontSize(22);
+    
+    }
+
+    .wrapper {
+        width: 90%;
     }
 
     .headerContainer {
         .decoTxt {
             width: 100px;
-            left: -20px;
-            bottom: -43px;
+            left: -18px;
+            bottom: -38px;
         }
 
         .headerTxt {
-            top: 0px;
-            left: 6px;
+            top: 25px;
+            left: px;
         }
+
         h2 {
-            @include fontSize(80)
+            @include fontSize(88)
         }
 
     }
 
     // Blog page
+
+    .blogHeader {
+        h2 {
+            @include fontSize(55);
+            bottom: -30px;
+        }
+    }
     .blogStyle {
+        padding: 60px 0px;
 
         .columnOne {
             flex-direction: column;
 
             .about {
                 width: 100%;
+                text-align: center;
             }
 
             .recent {
                 width: 100%;
             }
         }
+
         .columnTwo {
 
             .flex {
                 flex-direction: column;
                 gap: 0px;
                 }
-
-            img {
-                width: 50px;
-            }
+            
+        }
+        
+        .img {
+            width: 20%;
         }
     }
 
 
-// Contact page 
+// Contact page
 
+    .contactHeader {
+        h2 {
+            @include fontSize(55);
+            bottom: -30px;
+            
+        }
+    }
 
+    .contactInfo {
+        padding: 60px 0px;
+    }
 
     
 }

@@ -1,5 +1,5 @@
 .blogStyle {
-    padding: 50px 0px;
+    padding: 90px 0px;
 
     .columnFlex {
         display: flex;
@@ -15,7 +15,9 @@
         gap: 20px;
 
         .about {
-
+            img {
+                width: 100%;
+            }
             h5 {
                 margin-top: 20px;
             }

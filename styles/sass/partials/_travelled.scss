@@ -6,24 +6,24 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 70px
     }
 
     .travelledTxt {
-        flex: 1;
         text-align: right;
-
+        width: 45%;
+        margin-right: 100px;
 
     }
 
     .travelledImg {
-        flex: 1;
-    }
-
-    img {
+        width: 55%;
+        
+        img {
         box-shadow: 700px 20px 0px 0px $tertiary,
         20px 20px 0px 0px $tertiary,
         300px 20px 0px 0px $tertiary;
         position: relative;
+        top: 20px;
+        }
     }
 }
