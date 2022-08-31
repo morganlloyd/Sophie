@@ -348,6 +348,9 @@ button:hover, button:focus {
 a {
   display: inline-block;
 }
+a:active {
+  color: #f0efed;
+}
 
 footer {
   text-align: center;
@@ -1005,6 +1008,7 @@ form textarea {
   .contactHeader h2 {
     font-size: 70px;
     font-size: 3.5rem;
+    left: 0px;
     white-space: nowrap;
   }
 }
@@ -1076,5 +1080,11 @@ form textarea {
   }
   .contactInfo {
     padding: 60px 0px;
+  }
+  .contactForm .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }

@@ -266,6 +266,7 @@
     .contactHeader {
         h2 {
             @include fontSize(70);
+            left: 0px;
             white-space: nowrap;
         }
     }
@@ -365,6 +366,11 @@
     .contactInfo {
         padding: 60px 0px;
     }
-
     
+    .contactForm {
+        .flex {
+            flex-direction: column;
+        }
+
+    }
 }
