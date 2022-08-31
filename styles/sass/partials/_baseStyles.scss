@@ -33,7 +33,7 @@ button {
     &:hover,
     &:focus {
         border: 2px solid $accent;
-        background-color: $whiteShade;
+        background-color: white;
         color: $accent;
     }
 }
@@ -41,10 +41,6 @@ button {
 a {
 
     display: inline-block;
-
-    &:active {
-        color: $whiteShade;
-    }
 
 }
 

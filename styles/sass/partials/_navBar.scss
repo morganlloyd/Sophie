@@ -53,14 +53,21 @@
 
     li {
         padding: 10px 15px;
+
+        
     }
 
     a {
         padding: 10px 15px;
 
         &:hover,
-        &:focus {
+        &:focus,
+        &:active {
             color:$whiteShade;
+        }
+
+        &:active {
+            color: white;
         }
 
     }

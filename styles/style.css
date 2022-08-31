@@ -341,15 +341,12 @@ button {
 }
 button:hover, button:focus {
   border: 2px solid #05afc1;
-  background-color: #f0efed;
+  background-color: white;
   color: #05afc1;
 }
 
 a {
   display: inline-block;
-}
-a:active {
-  color: #f0efed;
 }
 
 footer {
@@ -421,8 +418,11 @@ footer p {
 .navBar a {
   padding: 10px 15px;
 }
-.navBar a:hover, .navBar a:focus {
+.navBar a:hover, .navBar a:focus, .navBar a:active {
   color: #f0efed;
+}
+.navBar a:active {
+  color: white;
 }
 
 .headerContainer {
@@ -1077,14 +1077,21 @@ form textarea {
     font-size: 55px;
     font-size: 2.75rem;
     bottom: -30px;
+    left: 15px;
   }
   .contactInfo {
     padding: 60px 0px;
+    text-align: center;
   }
   .contactForm .flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .socials ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }

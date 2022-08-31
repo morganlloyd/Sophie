@@ -219,8 +219,6 @@
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
-
-    
     button {
         width: 100%;
     }
@@ -359,12 +357,13 @@
         h2 {
             @include fontSize(55);
             bottom: -30px;
-            
+            left: 15px;
         }
     }
-
+    
     .contactInfo {
         padding: 60px 0px;
+        text-align: center;
     }
     
     .contactForm {
@@ -373,4 +372,11 @@
         }
 
     }
+
+    .socials {
+        ul {
+            justify-content: center;
+        }
+    }
+
 }
