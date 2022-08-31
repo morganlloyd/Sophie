@@ -22,4 +22,15 @@
 
 .photoAboutTwo {
     padding-bottom: 90px;
+
+    .text {
+        transition: 0.5s;
+
+        h4 {
+            &:hover,
+            &:focus {
+                color: $accent;
+            }
+        }
+    }
 }

@@ -581,6 +581,13 @@ footer p {
 .photoAboutTwo {
   padding-bottom: 90px;
 }
+.photoAboutTwo .text {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.photoAboutTwo .text h4:hover, .photoAboutTwo .text h4:focus {
+  color: #05afc1;
+}
 
 .fullBleed {
   background-image: url(/assets/home-image-4.jpg);
