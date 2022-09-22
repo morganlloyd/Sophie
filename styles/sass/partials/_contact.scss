@@ -16,6 +16,19 @@
 
         a {
             text-transform: lowercase;
+            padding-top: 10px;
+            transition: 0.3s;
+
+            &:hover,
+            &:focus {
+                color: $accent;
+            }
+        }
+
+        address {
+            margin-top: 10px;
+            line-height: 25px;
+            font-style: normal;
         }
     }
 

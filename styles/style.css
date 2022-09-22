@@ -752,6 +752,17 @@ footer p {
 }
 .contactInfo .infoBox a {
   text-transform: lowercase;
+  padding-top: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contactInfo .infoBox a:hover, .contactInfo .infoBox a:focus {
+  color: #05afc1;
+}
+.contactInfo .infoBox address {
+  margin-top: 10px;
+  line-height: 25px;
+  font-style: normal;
 }
 .contactInfo .socials {
   color: #f6a823;
