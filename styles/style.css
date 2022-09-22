@@ -331,7 +331,7 @@ img {
   display: block;
 }
 
-button {
+.button {
   background-color: #05afc1;
   border: 2px solid #05afc1;
   cursor: pointer;
@@ -339,7 +339,7 @@ button {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-button:hover, button:focus {
+.button:hover, .button:focus {
   border: 2px solid #05afc1;
   background-color: white;
   color: #05afc1;
