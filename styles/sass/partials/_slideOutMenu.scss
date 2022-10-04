@@ -5,20 +5,23 @@
     position: fixed;
     top: 0;
     z-index: 999;
-    width: 50%;
+    width: 60%;
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
     transition: 0.5s;
-    left: -900px;
+    left: -600px;
+
+    &.open {
+        left: 0px;
+    }
 
     .menuClose {
         transition: 0.2s;
 
         &:hover,
         &:focus {
-            color: $senary;
-            @include fontSize(32);
+            color: $tertiary;
             
         }
     }
@@ -29,13 +32,10 @@
 
                 &:hover,
                 &:focus {
-                    color: $senary;
+                    color: $tertiary;
                 }
             }
         }
     }
     
-    .slideOutMenu.open {
-        left: 0px;
-    }
 

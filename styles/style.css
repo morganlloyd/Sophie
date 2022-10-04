@@ -816,7 +816,7 @@ form textarea {
   position: fixed;
   top: 0;
   z-index: 999;
-  width: 50%;
+  width: 60%;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -826,16 +826,17 @@ form textarea {
           justify-content: space-between;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  left: -900px;
+  left: -600px;
+}
+.slideOutMenu.open {
+  left: 0px;
 }
 .slideOutMenu .menuClose {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 .slideOutMenu .menuClose:hover, .slideOutMenu .menuClose:focus {
-  color: #a82706;
-  font-size: 32px;
-  font-size: 1.6rem;
+  color: #f6a823;
 }
 .slideOutMenu nav li {
   padding-bottom: 20px;
@@ -843,11 +844,7 @@ form textarea {
   transition: 0.2s;
 }
 .slideOutMenu nav li:hover, .slideOutMenu nav li:focus {
-  color: #a82706;
-}
-
-.slideOutMenu.open {
-  left: 0px;
+  color: #f6a823;
 }
 
 /* Portrait tablet and small desktops */
