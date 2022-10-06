@@ -6,10 +6,16 @@ app.init = function () {
     app.menuClose = document.querySelector('#menuClose');
     app.mobileMenu = document.querySelector('.slideOutMenu');
 
+    //elements for popup modal
+    app.modal = document.querySelector('#modal');
+    app.modalClose = document.querySelector('#closeModal');
+
     //call the menu function
     app.menu();
     // call the noMenu function
     app.noMenu();
+    //call the closeModal function
+    app.closeModal();
 };
 
 // SLIDE OUT MENU FUNCTIONS
@@ -28,5 +34,20 @@ app.noMenu = function () {
     
 }
 
+// POPUP MODAL
+
+// After screen loads - 2 seconds then email subscription modal pops up
+window.onload = function () {
+    setTimeout( () => {
+        app.modal.style.visibility = "visible"
+    }, 2000);
+};
+
+// when user clicks on the "X" close the modal 
+app.closeModal = function () {
+    app.modalClose.addEventListener('click', () => {
+        app.modal.style.visibility = "hidden"
+    });
+};
 
 app.init();

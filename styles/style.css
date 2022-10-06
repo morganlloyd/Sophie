@@ -658,6 +658,7 @@ footer p {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
+  visibility: hidden;
 }
 .modal .modalContainer {
   background: white;
