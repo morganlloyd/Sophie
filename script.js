@@ -16,6 +16,7 @@ app.init = function () {
     app.noMenu();
     //call the closeModal function
     app.closeModal();
+    //call the email validation function
 };
 
 // SLIDE OUT MENU FUNCTIONS
@@ -49,5 +50,7 @@ app.closeModal = function () {
         app.modal.style.visibility = "hidden"
     });
 };
+
+
 
 app.init();
