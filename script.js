@@ -36,8 +36,7 @@ app.noMenu = function () {
 }
 
 // POPUP MODAL
-
-// After screen loads - 2 seconds then email subscription modal pops up
+// After window loads - 2 seconds then email subscription modal pops up
 window.onload = function () {
     setTimeout( () => {
         app.modal.style.visibility = "visible"
