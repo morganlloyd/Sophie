@@ -24,11 +24,12 @@
             right: 40px;
         }
         .email {
-            border-bottom: 2px $senary solid;
+            border-bottom: 1px black solid;
             outline: none;
         }
 
         .submit {
+            width: 100%;
             background-color: $accent;
             border: 2px solid $accent;
             text-transform: uppercase;
@@ -54,12 +55,24 @@
             color: $tertiary;
         }
 
+        .emailInput {
+            display: flex;
+            flex-direction: column;
+        }
+        .emailError {
+            text-align: center;
+            color: $senary;
+            display: none;
+            
+        }
+
 
     }
 
     .closeModal {
         text-align: right;
         font-size: larger;
+        cursor: pointer;
         padding: 20px;
         position: absolute;
         right: 0;

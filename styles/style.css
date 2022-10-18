@@ -672,10 +672,11 @@ footer p {
   right: 40px;
 }
 .modal .modalContent .email {
-  border-bottom: 2px #a82706 solid;
+  border-bottom: 1px black solid;
   outline: none;
 }
 .modal .modalContent .submit {
+  width: 100%;
   background-color: #05afc1;
   border: 2px solid #05afc1;
   text-transform: uppercase;
@@ -697,9 +698,24 @@ footer p {
 .modal .modalContent span {
   color: #f6a823;
 }
+.modal .modalContent .emailInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.modal .modalContent .emailError {
+  text-align: center;
+  color: #a82706;
+  display: none;
+}
 .modal .closeModal {
   text-align: right;
   font-size: larger;
+  cursor: pointer;
   padding: 20px;
   position: absolute;
   right: 0;
@@ -887,19 +903,12 @@ form textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
   left: -99999px;
 }
 .slideOutMenu.open {
   left: 0px;
-}
-.slideOutMenu .menuClose {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-.slideOutMenu .menuClose:hover, .slideOutMenu .menuClose:focus {
-  color: #f6a823;
 }
 .slideOutMenu nav li {
   padding-bottom: 20px;
@@ -908,6 +917,9 @@ form textarea {
 }
 .slideOutMenu nav li:hover, .slideOutMenu nav li:focus {
   color: #f6a823;
+}
+.slideOutMenu .menuClose {
+  cursor: pointer;
 }
 
 /* Portrait tablet and small desktops */

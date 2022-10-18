@@ -9,22 +9,14 @@
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
-    transition: 0.5s;
+    transition: 0.2s ease-in;
     left: -99999px;
 
     &.open {
         left: 0px;
     }
 
-    .menuClose {
-        transition: 0.2s;
 
-        &:hover,
-        &:focus {
-            color: $tertiary;
-            
-        }
-    }
     nav {
         li {
             padding-bottom: 20px;
@@ -36,6 +28,10 @@
                 }
             }
         }
+
+    .menuClose {
+        cursor: pointer;
+    }
     }
     
 

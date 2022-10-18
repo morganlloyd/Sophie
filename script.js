@@ -1,15 +1,6 @@
 const app = {};
 
 app.init = function () {
-    //grab the elements for mobile menu
-    app.menuOpen = document.querySelector('#menuOpen');
-    app.menuClose = document.querySelector('#menuClose');
-    app.mobileMenu = document.querySelector('.slideOutMenu');
-
-    //elements for popup modal
-    app.modal = document.querySelector('#modal');
-    app.modalClose = document.querySelector('#closeModal');
-
     //call the menu function
     app.menu();
     // call the noMenu function
@@ -20,6 +11,12 @@ app.init = function () {
 };
 
 // SLIDE OUT MENU FUNCTIONS
+
+//grab the elements for mobile menu
+app.menuOpen = document.querySelector('#menuOpen');
+app.menuClose = document.querySelector('#menuClose');
+app.mobileMenu = document.querySelector('.slideOutMenu');
+
 // when user clicks the hamburger menu on tablet/mobile view the menu slides out.
 app.menu = function () {
     app.menuOpen.addEventListener('click', () => {
@@ -36,6 +33,11 @@ app.noMenu = function () {
 }
 
 // POPUP MODAL
+
+//grab elements for popup modal
+app.modal = document.querySelector('#modal');
+app.modalClose = document.querySelector('#closeModal');
+
 // After window loads - 2 seconds then email subscription modal pops up
 window.onload = function () {
     setTimeout( () => {
@@ -50,6 +52,10 @@ app.closeModal = function () {
     });
 };
 
-
+// // EMAIL VERIFICATION
+// app.form = document.querySelector('form');
+// app.emailTxt = document.querySelector('.emailInput');
+// app.emailInput = document.querySelector('.email');
+// app.emailError = document.querySelector('.emailError');
 
 app.init();
