@@ -5,12 +5,10 @@ app.init = function () {
     app.menu();
     // call the noMenu function
     app.noMenu();
-    //call the closeModal function
-    app.closeModal();
-    //call the email validation function
+
 };
 
-// SLIDE OUT MENU FUNCTIONS
+// SLIDE OUT MENU
 
 //grab the elements for mobile menu
 app.menuOpen = document.querySelector('#menuOpen');
@@ -34,23 +32,23 @@ app.noMenu = function () {
 
 // POPUP MODAL
 
-//grab elements for popup modal
-app.modal = document.querySelector('#modal');
-app.modalClose = document.querySelector('#closeModal');
+// //grab elements for popup modal
+// app.modal = document.querySelector('#modal');
+// app.modalClose = document.querySelector('#closeModal');
 
-// After window loads - 2 seconds then email subscription modal pops up
-window.onload = function () {
-    setTimeout( () => {
-        app.modal.style.visibility = "visible"
-    }, 2000);
-};
+// // After window loads - 2 seconds then email subscription modal pops up
+// window.onload = function () {
+//     setTimeout( () => {
+//         app.modal.style.visibility = "visible"
+//     }, 2000);
+// };
 
-// when user clicks on the "X" close the modal 
-app.closeModal = function () {
-    app.modalClose.addEventListener('click', () => {
-        app.modal.style.visibility = "hidden"
-    });
-};
+// // when user clicks on the "X" close the modal 
+// app.closeModal = function () {
+//     app.modalClose.addEventListener('click', () => {
+//         app.modal.style.visibility = "hidden"
+//     });
+// };
 
 // // EMAIL VERIFICATION
 // app.form = document.querySelector('form');
