@@ -10,6 +10,11 @@
         width: 35%;
     }
 
+    .emailPhone {
+        display: flex;
+        flex-direction: column;
+    }
+    
     .infoBox {
         background-color: white;
         padding: 50px;

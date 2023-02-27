@@ -825,6 +825,15 @@ footer p {
 .contactInfo .columnLeft {
   width: 35%;
 }
+.contactInfo .emailPhone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .contactInfo .infoBox {
   background-color: white;
   padding: 50px;
