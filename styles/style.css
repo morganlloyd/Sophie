@@ -643,6 +643,85 @@ footer p {
   height: auto;
 }
 
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  visibility: hidden;
+}
+.modal .modalContainer {
+  background: white;
+  padding: 40px;
+  position: relative;
+}
+.modal .modalContent .bike {
+  width: 200px;
+  position: absolute;
+  top: 100px;
+  right: 40px;
+}
+.modal .modalContent .email {
+  border-bottom: 1px black solid;
+  outline: none;
+}
+.modal .modalContent .submit {
+  width: 100%;
+  background-color: #05afc1;
+  border: 2px solid #05afc1;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.modal .modalContent .submit:hover, .modal .modalContent .submit:focus {
+  border: 2px solid #05afc1;
+  background-color: white;
+  color: #05afc1;
+}
+.modal .modalContent h3 {
+  padding-top: 30px;
+}
+.modal .modalContent span {
+  color: #f6a823;
+}
+.modal .modalContent .emailInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.modal .modalContent .emailError {
+  text-align: center;
+  color: #a82706;
+  display: none;
+}
+.modal .closeModal {
+  text-align: right;
+  font-size: larger;
+  cursor: pointer;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .blogStyle {
   padding: 90px 0px;
 }
@@ -806,6 +885,41 @@ form textarea {
   accent-color: #05afc1;
   resize: none;
   font-style: italic;
+}
+
+.slideOutMenu {
+  background-color: #f0efed;
+  font-size: 30px;
+  font-size: 1.5rem;
+  padding: 30px 50px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 60%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  left: -99999px;
+}
+.slideOutMenu.open {
+  left: 0px;
+}
+.slideOutMenu nav li {
+  padding-bottom: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.slideOutMenu nav li:hover, .slideOutMenu nav li:focus {
+  color: #f6a823;
+}
+.slideOutMenu .menuClose {
+  cursor: pointer;
 }
 
 /* Portrait tablet and small desktops */
@@ -1060,6 +1174,9 @@ form textarea {
     font-size: 88px;
     font-size: 4.4rem;
   }
+  .slideOutMenu {
+    width: 100%;
+  }
   .blogHeader h2 {
     font-size: 55px;
     font-size: 2.75rem;
@@ -1092,10 +1209,10 @@ form textarea {
     width: 20%;
   }
   .contactHeader h2 {
-    font-size: 55px;
-    font-size: 2.75rem;
+    font-size: 50px;
+    font-size: 2.5rem;
     bottom: -30px;
-    left: 15px;
+    left: 7px;
   }
   .contactInfo {
     padding: 60px 0px;

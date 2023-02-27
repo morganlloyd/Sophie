@@ -14,7 +14,7 @@
 <!--mobile nav begins-->
     <nav class="mobileNav">
         <div class="wrapper">
-            <div class="menuIcon">
+            <div class="menuIcon" id="menuOpen">
                 <a href="#">
                     <i class="fa-solid fa-bars"></i>
                 </a>
@@ -27,7 +27,24 @@
         </div>
     </nav>
 <!--mobile nav ends-->
-    
+
+<!--slide out nav-->
+<div class="slideOutMenu">
+    <div class="menuClose" id="menuClose">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<!--slide out nav ends-->
+
 <!--nav bar begins -->
     <nav class="navBar">
         <div class="wrapper">
@@ -123,5 +140,7 @@
         <p>Copyright © 2018 HackerYou</p>
     </footer>
 <!--footer ends-->
+
+    <script src="script.js"></script>
 </body>
 </html>

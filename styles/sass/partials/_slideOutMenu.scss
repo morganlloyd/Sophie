@@ -1,0 +1,37 @@
+.slideOutMenu {
+    background-color: $whiteShade;
+    @include fontSize(30);
+    padding: 30px 50px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 60%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.2s ease-in;
+    left: -99999px;
+
+    &.open {
+        left: 0px;
+    }
+
+
+    nav {
+        li {
+            padding-bottom: 20px;
+                transition: 0.2s;
+
+                &:hover,
+                &:focus {
+                    color: $tertiary;
+                }
+            }
+        }
+
+    .menuClose {
+        cursor: pointer;
+    }
+    }
+    
+

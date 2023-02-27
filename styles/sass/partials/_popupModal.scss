@@ -1,0 +1,82 @@
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    visibility: hidden;
+
+    .modalContainer {
+        background: white;
+        padding: 40px;
+        position: relative;
+    }
+
+    .modalContent {
+
+        .bike {
+            width: 200px;
+            position: absolute;
+            top: 100px;
+            right: 40px;
+        }
+        .email {
+            border-bottom: 1px black solid;
+            outline: none;
+        }
+
+        .submit {
+            width: 100%;
+            background-color: $accent;
+            border: 2px solid $accent;
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px 20px;
+            transition: 0.5s;
+            
+            &:hover,
+            &:focus {
+                border: 2px solid $accent;
+                background-color: white;
+                color: $accent;
+            }
+        }
+
+        h3 {
+            padding-top: 30px;
+        }
+
+        span {
+            color: $tertiary;
+        }
+
+        .emailInput {
+            display: flex;
+            flex-direction: column;
+        }
+        .emailError {
+            text-align: center;
+            color: $senary;
+            display: none;
+            
+        }
+
+
+    }
+
+    .closeModal {
+        text-align: right;
+        font-size: larger;
+        cursor: pointer;
+        padding: 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+}

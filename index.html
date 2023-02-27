@@ -5,16 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sophie | Home</title>
+    <link rel="icon" type="image" href="./assets/orange-16.png">
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/dab80b7859.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     
+<!--pop-up email modal-->
+    <div class="modal" id="modal">
+        <div class="modalContainer" id="modalContainer">
+            <div class="closeModal" id="closeModal">
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <div class="modalContent">
+                <img src="./assets/home-image-5.jpg">
+                <img src="./assets/home-image-6.jpg" class="bike">
+                <h3>Keep up with <span>Sophie</span></h3>
+                <p>Subscribe for travel and lifestyle tips from Sophie!</p>
+
+                <form action="#">
+                    <div class="emailInput">
+                        <input type="email" placeholder="Email Address" class="email">
+                        <span class="emailError">
+                        Please enter a valid email
+                        </span>
+                    </div>
+                    <div class="submitBtn">
+                        <input type="submit" value="Subscribe" class="submit">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+<!--pop-up modal ends -->
+
 <!--mobile nav begins-->
     <nav class="mobileNav"> 
         <div class="wrapper">
-            <div class="menuIcon">
+            <div class="menuIcon" id="menuOpen">
                 <a href="#">
                     <i class="fa-solid fa-bars"></i>
                 </a>
@@ -36,10 +66,10 @@
     
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -69,8 +99,6 @@
         </div> <!--wrapper ends-->
     </nav>
 <!--nav bar ends -->
-
-
 
 
 <!--header begins-->
@@ -164,9 +192,9 @@
             </div>
         </div>
     </section>
-    <!--photos & about ends-->
+<!--photos & about ends-->
 
-    <!--blog & get in touch begins -->
+<!--blog & get in touch begins -->
     <section class="photoAbout photoAboutTwo">
         <div class="wrapper">
             <div class="flexContainer">
@@ -235,5 +263,7 @@
         <p>Copyright © 2018 HackerYou</p>
     </footer>
 <!--footer ends-->
+
+    <script src="script.js"></script>
 </body>
 </html>
