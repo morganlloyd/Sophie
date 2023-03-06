@@ -1,14 +1,14 @@
 .slideOutMenu {
-    background-color: $whiteShade;
+    background-color: white;
     @include fontSize(30);
     padding: 30px 50px;
     position: fixed;
     top: 0;
     z-index: 999;
-    width: 50%;
+    width: 100%;
     min-height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     transition: 0.2s ease-in-out;
     left: -99999px;
 
@@ -20,7 +20,7 @@
     nav {
         li {
             padding-bottom: 20px;
-                transition: 0.2s;
+                transition: 0.2s ease-in-out;
 
                 &:hover,
                 &:focus {
@@ -31,9 +31,16 @@
 
     .menuClose {
         cursor: pointer;
-        position: relative;
-        top: -10px;
-        left: -20px;
+        @include fontSize(40);
+        position: absolute;
+        top: 15px;
+        left: 50px;
+        transition: 0.2s ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: $tertiary;
+        }
 
     }
     }
